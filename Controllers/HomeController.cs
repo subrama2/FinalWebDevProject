@@ -18,15 +18,27 @@ namespace FinalWebDevProject.Controllers
             return View();
         }
 
-        public IActionResult About()
-        {
-            return View();
-        }
         public IActionResult Food()
         {
             return View();
         }
 
+        public IActionResult Game()
+        {
+            return View();
+        }
+        public IActionResult Movie()
+        {
+            return View();
+        }
+        public IActionResult Sports()
+        {
+            return View();
+        }
+        public IActionResult Courses()
+        {
+            return View();
+        }
 
 
 
