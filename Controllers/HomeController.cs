@@ -1,4 +1,4 @@
-﻿//Test
+﻿
 using FinalWebDevProject.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -16,7 +16,7 @@ namespace FinalWebDevProject.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View("About");
         }
 
         public IActionResult Privacy()
