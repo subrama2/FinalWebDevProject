@@ -1,0 +1,25 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    padding-bottom: 30px;
+}
+
+.imgbox {
+    display: grid;
+    height: 80%;
+}
+
+.center-fit {
+    max-width: 70%;
+    max-height: 70vh;
+    margin: auto;
+}
+
+p {
+    font-size: 150%;
+}
+
+h1 {
+    text-align: center;
+}
