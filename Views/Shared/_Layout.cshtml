@@ -4,16 +4,70 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <style>
+        *{
+            background-color: lightblue;
+        }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+}
+
+li {
+  float: left;
+ 
+ 
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+}
+</style>
 </head>
 <body>
-    <table>
+   
+    <ul>
+  <li><a @Html.ActionLink("About","Index","Home")</a></li>
+  <li> <a  @Html.ActionLink("Food","Food","Home")</a></li>
+ <li> <a   @Html.ActionLink("Game","Game","Home")</a></li>
+  <li> <a   @Html.ActionLink("Movie","Movie","Home")</a></li>
+      <li> <a  @Html.ActionLink("Sports","Sports","Home")</a></li>
+          <li> <a   @Html.ActionLink("Courses","Courses","Home")</a></li>
+</ul>
+
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
+
+
+
+
+ @*<table>
         <tr>
             <th></th>
             <th></th>
             <th></th>
         </tr>
         <tr>
-            <td class="nav" style="text-align:center";style="vertical-align:middle">
+            <td class="nav" style="text-align:center">
                 <br/>
                 @Html.ActionLink("About","Index","Home")
                 <br />
@@ -35,9 +89,4 @@
                 </td>
             
         </tr>
-    </table>
-    <div>
-        @RenderBody()
-    </div>
-</body>
-</html>
+    </table>*@
