@@ -10,6 +10,6 @@ namespace FinalWebDevProject.Models
         public Guid CourseId { get; set; }
         public string CourseName { get; set; }
         public string ProfessorName { get; set; }
-        public int year { get; set; }
+        public int Day { get; set; }
     }
 }
